@@ -42,7 +42,7 @@ public class SupermercadoView {
 		frmSooper = new JFrame();
 		frmSooper.setTitle("SOOPER");
 		frmSooper.setBounds(0, 0, 496, 496);
-		frmSooper.getContentPane().setLayout(new MigLayout("", "[]", "[][][][][grow][]"));
+		frmSooper.getContentPane().setLayout(new MigLayout("", "[]", "[][][][][][]"));
 		
 		textField = new JTextField();
 		textField.setText("<introduzca aqui el numero de pedido>");
@@ -66,7 +66,7 @@ public class SupermercadoView {
 		scrollPane.setViewportView(table);
 		
 		JButton btnEmbolsarArticulos = new JButton("Embolsar");
-		frmSooper.getContentPane().add(btnEmbolsarArticulos, "cell 0 3,aligny bottom");
+		frmSooper.getContentPane().add(btnEmbolsarArticulos, "flowx,cell 0 3,aligny bottom");
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
 		frmSooper.getContentPane().add(scrollPane_1, "cell 0 4,grow");
